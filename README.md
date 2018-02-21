@@ -5,6 +5,10 @@ go-lex
 
 This is a simple lexer, based loosely on `text/template`'s lexer.
 
+# WARNING
+
+This repository has been moved to [github.com/lestrrat-go/lex](https://github.com/lestrrat-go/lex). This repository exists so that libraries pointing to this URL will keep functioning, but this repository will NOT be updated in the future. Please use the new import path.
+
 ## HOW TO USE
 
 The lexing is done by chaining `lex.LexFn` functions. Create a `StringLexer` or a `ReaderLexer`, and pass it an entry point to start lexing. The result will be passed through a channel as a series of `lex.Item`s:
